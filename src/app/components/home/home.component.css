@@ -1,0 +1,19 @@
+.card-header span{
+  float: left;
+}
+.card-header h5 {
+  float: right;
+}
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.col-sm-6 {
+  padding: 0 30px 30px 30px;
+}
+
+.btn-block {
+  margin: 10px 0;
+}
