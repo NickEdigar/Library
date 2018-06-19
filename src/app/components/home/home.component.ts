@@ -69,10 +69,9 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  validateTittle(tittle: string): Observable<ValidationErrors> {
+  validateTittle(tittle: string) {
 
     return new Promise(resolve => {
-
       const findTittle = this.books.find((el => el.tittle === tittle && JSON.parse(this.bookTmp).tittle !== tittle));
       setTimeout(() => {
         if (findTittle) {
@@ -86,7 +85,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  tittleAsyncValidator(control: FormControl): Observable<ValidationErrors> {
+  tittleAsyncValidator(control: FormControl) {
 
     return this.validateTittle(control.value);
   }
