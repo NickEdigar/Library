@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
   validateTittle(tittle: string) {
 
     return new Promise(resolve => {
-      const findTittle = this.books.find((el => el.tittle === tittle && JSON.parse(this.bookTmp).tittle !== tittle));
+      const findTittle = this.books.find((el => (el.tittle === tittle && JSON.parse(this.bookTmp).tittle !== tittle)));
       setTimeout(() => {
         if (findTittle) {
           resolve({
