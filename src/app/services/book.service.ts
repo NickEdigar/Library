@@ -2,9 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
-import { BasicApi } from '../core/BasicApi';
 import { Book } from '../models/book';
-
+import { BasicApi } from '../core/basicApi';
 
 @Injectable()
 export class BookService extends BasicApi {
